@@ -39,13 +39,13 @@ The following step guides you on how to set up an Amazon SageMaker Studio Lab ac
 
 2. Click on Open Project to launch the Jupyter Lab console.
 
-![](img/Studiolab-start-openproject.png)
+![](img/Studiolab-openproject.png)
 
 ## 3. Create and activate a custom environment 
 
 1. In the top-left corner of the JupyterLab environment, select File, then New, then Terminal, to launch a new terminal within the JupyterLab environment. 
     
-![](images/Studiolab-openterminal.png)
+![](img/Studiolab-openterminal.png)
 
 2. We will use this terminal to download the content from github, using the git client. Inside the terminal window, type the following commands:
 
@@ -71,9 +71,9 @@ The following step guides you on how to set up an Amazon SageMaker Studio Lab ac
     
 5. Launch the notebook titled `AutoGluon-cold-start-demo.ipynb` and select the custom envrionment `.conda-autogluon:Python` kernel.
 
-![](images/Studiolab-switchkernel.png)
+![](img/Studiolab-switchkernel.png)
 
-![](images/Studiolab-selectautogluonkernel.png)
+![](img/Studiolab-selectautogluonkernel.png)
 
 
 ## Security
