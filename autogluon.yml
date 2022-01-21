@@ -1,0 +1,5 @@
+name: autogluon
+dependencies:
+  - python=3.6   
+  - ipywidgets
+  - nb_conda_kernels
