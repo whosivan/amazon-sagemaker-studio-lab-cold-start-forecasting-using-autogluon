@@ -35,11 +35,11 @@ The following step guides you on how to set up an Amazon SageMaker Studio Lab ac
 
 1. In the top panel of the landing page, select "GPU" as compute type, and click "Start runtime". This will take a few minute.
 
-![]('img/Studiolab-start-runtime.png')
+![](img/Studiolab-start-runtime.png)
 
 2. Click on Open Project to launch the Jupyter Lab console.
 
-![]('img/Studiolab-start-openproject.png')
+![](img/Studiolab-start-openproject.png)
 
 ## 3. Create and activate a custom environment 
 
@@ -49,25 +49,25 @@ The following step guides you on how to set up an Amazon SageMaker Studio Lab ac
 
 2. We will use this terminal to download the content from github, using the git client. Inside the terminal window, type the following commands:
 
-    $ cd sagemaker-studiolab-notebooks/ 
+    $ `cd sagemaker-studiolab-notebooks/`
 
-    $ git clone [ADD FINAL GIT LINK HERE]
+    $ `git clone https://github.com/aws-samples/amazon-sagemaker-studio-lab-cold-start-forecasting-using-autogluon.git`
 
 3. Identify the "autogluon.yml" file within the repo, and [create a custom envrionment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) specified by the "autogluon.yml" file, and activate the environment.
     
-    $ conda env create -f autogluon.yml
+    $ `conda env create -f autogluon.yml`
     
-    $ conda activate autogluon 
+    $ `conda activate autogluon` 
 
 4. Once you are in the custom autogluon environment, download the AutoGluon package.
 
    $ make sure you are in sagemaker-studiolab-notebooks/ directory
    
-   $ git clone https://github.com/yx1215/autogluon.git
+   $ `git clone https://github.com/yx1215/autogluon.git`
    
-   $ cd autogluon/
+   $ `cd autogluon/`
    
-   $ git checkout --track origin/add_forecasting_predictor
+   $ `git checkout --track origin/add_forecasting_predictor`
     
 5. Launch the notebook titled `AutoGluon-cold-start-demo.ipynb` and select the custom envrionment `.conda-autogluon:Python` kernel.
 
